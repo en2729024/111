@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="menu2" class=" webkit chrome win js js cssanimations csstransforms csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class=" webkit chrome win js js cssanimations csstransforms csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <script src="./Sobre nosotros_files/turbolinks-2.5.3-format-b802e11287adb103d1cb3e2f99426bc12854d0b0f06d9463b37099f7b814e087.js"></script>
@@ -167,7 +167,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body id="menu3" class="page-12395559 content content_page" style="padding-top: 190px;">
+<body class="page-12395559 content content_page" style="padding-top: 190px;">
     
 
 
@@ -190,11 +190,11 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 
     
   
-  <header id="menu" class="header fixed collapsed ">
+  <header id="menu" class="header right-aligned fixed ">
     <div class="wrapper">
         
   <button class="toggle-menu">
-      <span class="close" onclick="openstarone()">
+      <span class="close" >
         <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -204,7 +204,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           </g>
         </svg>
       </span>
-      <span class="open" onclick="openstarone()">
+      <span class="open" >
         <svg width="26px" height="14px" viewBox="0 0 26 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -660,13 +660,13 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
     <script src="./Sobre nosotros_files/theme.js" type="text/javascript" data-turbolinks-eval="false"></script>
     <script src="./Sobre nosotros_files/fastclick-1aa08cb3c7aa70d268d24d59c374c14af7bd08e0af8c85f8e4f60a2651f4bab5.js" type="text/javascript" data-turbolinks-eval="false"></script>
     <script>
-  const starone = document.getElementById("menu");
-  const startwo = document.getElementById("menu2");
-  const starthree = document.getElementById("menu3");
-  function openstarone(){
-  starone.classList.toggle("menu-open");
-  startwo.classList.toggle("menu-open");
-  starthree.classList.toggle("menu-open");
+      const topmenu = document.getElementById("menu");
+        function changenv(){
+          if(document.body.scrollWidth < 768){
+            topmenu.classList.add("collapsed");
+          }else{
+            topmenu.classList.remove("collapsed");
+          }
 }
 </script>
 

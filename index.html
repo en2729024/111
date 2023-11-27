@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class=" webkit chrome win js js cssanimations csstransforms csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html id="menu2" class=" webkit chrome win js js cssanimations csstransforms csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <script src="./index_files/turbolinks-2.5.3-format-b802e11287adb103d1cb3e2f99426bc12854d0b0f06d9463b37099f7b814e087.js"></script>
@@ -183,7 +183,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="page-12393276 content content_page" style="padding-top: 190px;">
+<body id="menu3" class="page-12393276 content content_page" style="padding-top: 190px;">
     
 
 
@@ -215,11 +215,11 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
 
     
   
-  <header class="header right-aligned fixed ">
+  <header id="menu" class="header fixed collapsed ">
     <div class="wrapper">
         
   <button class="toggle-menu">
-      <span class="close">
+      <span class="close" onclick="openstarone()">
         <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -229,7 +229,7 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
           </g>
         </svg>
       </span>
-      <span class="open">
+      <span class="open" onclick="openstarone()">
         <svg width="26px" height="14px" viewBox="0 0 26 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs></defs>
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -1508,6 +1508,15 @@ try{function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){retur
     <script src="./index_files/imagesLoaded-1-fed646d96c533248c7385df7e92f61e013ef9b32b96ef4dd4adb658fc40375c6.js" type="text/javascript" data-turbolinks-eval="false"></script>
     <script src="./index_files/theme.js" type="text/javascript" data-turbolinks-eval="false"></script>
     <script src="./index_files/fastclick-1aa08cb3c7aa70d268d24d59c374c14af7bd08e0af8c85f8e4f60a2651f4bab5.js" type="text/javascript" data-turbolinks-eval="false"></script>
-
+    <script>
+  const starone = document.getElementById("menu");
+  const startwo = document.getElementById("menu2");
+  const starthree = document.getElementById("menu3");
+  function openstarone(){
+  starone.classList.toggle("menu-open");
+  startwo.classList.toggle("menu-open");
+  starthree.classList.toggle("menu-open");
+}
+</script>
 
 </body></html>
